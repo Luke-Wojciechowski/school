@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Exo|PT+Sans+Narrow:400,700');
+
+*{/* outline: 1px red solid */}
+body{
+	margin: 0;
+	font-family: 'Exo', sans-serif;
+}
+/* mid */
+.sub-branch{
+	margin-top: 12vh;
+}
+.sub-1, .sub-2, .sub-3{
+	margin-bottom: 12vh
+}
+[class*="sub"]:hover{
+	opacity: 0.8;
+	transition: 0.7s
+}
+.sub-text-1{
+	box-shadow: 0 0 5px #DC3545;
+}
+.sub-text-2{
+	box-shadow: 0 0 5px #28A745;
+}
+.sub-text-3{
+	box-shadow: 0 0 5px #E0A800;
+}
+
+[class*="sub-photo"]{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	height: 20vh;
+}
+.sub-photo-1{
+	background-image: url("./math.jpeg");
+	box-shadow: 0 0 5px #DC3545;
+}
+.sub-photo-2{
+	background-image: url("./geo.jpg");
+	box-shadow: 0 0 5px #28A745;
+}
+.sub-photo-3{
+	background-image: url("./ang.jpeg");
+	box-shadow: 0 0 5px #E0A800;
+}
+[class*="sub-photo"]:hover>.fa-play{
+	visibility: visible;
+	transition: 0.3s;
+}
+.fa-play{
+	color: white;
+	margin-top: 35%;
+	font-size: 2em;
+	visibility: hidden;
+}
+
+@media(max-width: 991px){
+	[class*="sub-photo"]:hover>.fa-play{
+		display: none;}
+}
+/* mid-2 */
+.complains{
+ 	background-color: rgb(240, 240, 240);
+ 	font-size: 1.4rem;
+ 	font-weight: 700;
+ 	font-family: 'PT Sans Narrow', sans-serif;
+ 	margin-bottom: 12vh;
+}
+/* footer */
+[class*="footer__item-"]{
+	height: 20vh;
+	color: #fff;
+}
+.footer__item-2{
+	background-color: #17A2B8;
+}
+
+.footer__item-1, .footer__item-3{
+	background-color: #057384;
+}
+.footer__foot{
+	background-color: #17A2B8;
+	height: 3.25vh
+}
+
+.text-footer-2 .fa{
+	height: 3rem;
+	width: 3rem;
+	border: 1px solid #c6cacc;
+	text-align: center;
+	line-height: 3rem;
+	font-size: 1.2rem;
+	transition: 0.9s;
+}
+.fa-snapchat-ghost:hover{
+	background-color: #FFFC01;
+	box-shadow: 0 0 3px #FFFC01;
+}
+.fa-facebook:hover{
+	background-color: #3B5A9D;
+	box-shadow: 0 0 3px #3B5A9D;
+}
+.fa-twitter:hover{
+	background-color: #fff;
+	color: #4D9EED;
+	box-shadow: 0 0 3px #fff;
+}
+.fa-phone:hover{
+	background-color: #3DAD4F;
+	box-shadow: 0 0 3px #3DAD4F;
+}
+.footer-end{
+	color: white;
+}
+
+@media(max-width: 767px){
+	.footer__item-1{
+		height: 50vh
+	}
+	.footer__item-2{
+		height: 30vh;
+	}
+	.footer__item-3{
+		height: 30vh
+	}
+	.footer-end{
+		display: none;
+	}
+}
+@media(max-width: 991px){
+	[class*="footer__item"]{
+		height: 40vh
+	}
+}
