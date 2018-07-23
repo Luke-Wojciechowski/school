@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Exo|PT+Sans+Narrow:400,700');
+
+*{/* outline: 1px red solid */}
+body{
+	margin: 0;
+	font-family: 'Exo', sans-serif;
+	text-align: center;
+}
+
+
+
+
+/* footer */
+.footer{
+	background-color: #17A2B8;
+	color: white;
+	height: 40px;
+}
